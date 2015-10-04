@@ -7,7 +7,7 @@ mc = MarkovChain("./markov")
 
 for i in range(1, 21):
     markovStr = mc.generateString()
-    while len(markovStr) < 50 or len(markovStr) > 100:
+    while len(markovStr) < 75 or len(markovStr) > 115:
         markovStr = mc.generateString()
     # print "[" + str(i) + "] " + markovStr
     print markovStr
